@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buscador de peliculas</title>
     <style>
         body {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -169,24 +169,24 @@
 <body>
     <div class="main-container">
         <div class="title-section">
-            <h1>🎬 Movie Reviews</h1>
-            <h2>Discover the latest movies and reviews</h2>
+            <h1>🎬 Buscador de Peliculas</h1>
+            <h2>Descubre las últimas películas</h2>
         </div>
         
         <div class="search-section">
             <form action="">
                 <div class="mb-3">
                     <label for="searchMovie" class="form-label">
-                        🔍 Search for a Movie:
+                        🔍 Busca una pelicula:
                     </label>
-                    <input type="text" class="form-control" name="searchMovie" placeholder="Enter movie title..."/>
+                    <input type="text" class="form-control" name="searchMovie" placeholder="Ingresa el nombre de la pelicula..."/>
                 </div>
-                <button type="submit" class="btn btn-primary">Search Movies</button>
+                <button type="submit" class="btn btn-primary">Buscar Peliculas</button>
             </form>
         </div>
         
         {% if searchTerm %}
-            <p class="search-result">🎯 Searching for: "{{searchTerm}}"</p>
+            <p class="search-result">🎯 Buscando...: "{{searchTerm}}"</p>
         {% endif %}
         
         <div class="movies-grid">
